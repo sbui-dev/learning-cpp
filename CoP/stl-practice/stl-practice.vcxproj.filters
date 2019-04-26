@@ -24,12 +24,18 @@
     <ClCompile Include="myList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="myList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "myVector.h"
 #include "myList.h"
+#include "MyMap.h"
 
 int main()
 {
@@ -11,8 +12,9 @@ int main()
     //vectorAndMemory();
     //twoDimensionalVectors();
 
-    myList();
+    //myList();
 
+    myMap();
 
     return 0;
 }
