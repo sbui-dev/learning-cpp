@@ -6,7 +6,8 @@
 
 int main()
 {
-    vectorPractice();
-    vectorAndMemory();
+    //vectorPractice();
+    //vectorAndMemory();
+    twoDimensionalVectors();
     return 0;
 }
