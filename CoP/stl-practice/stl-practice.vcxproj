@@ -151,10 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="myList.cpp" />
     <ClCompile Include="myVector.cpp" />
     <ClCompile Include="stl-practice.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="myList.h" />
     <ClInclude Include="myVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

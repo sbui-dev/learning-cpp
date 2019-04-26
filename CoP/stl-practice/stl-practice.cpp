@@ -3,11 +3,16 @@
 
 #include <iostream>
 #include "myVector.h"
+#include "myList.h"
 
 int main()
 {
     //vectorPractice();
     //vectorAndMemory();
-    twoDimensionalVectors();
+    //twoDimensionalVectors();
+
+    myList();
+
+
     return 0;
 }
