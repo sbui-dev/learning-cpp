@@ -22,8 +22,19 @@ public:
         age = other.age;
     }
 
-    void print() {
+    void print() const {
         cout << name << ": " << age << endl;
+    }
+
+    // const to keep the object the same and pass by reference instead of copy
+    bool operator<(const Person &other) const {
+        // needs both comparison to correct identify if object is the same
+        if (name == other.name) {
+            return age < other.age;
+        }
+        else {
+            return name < other.name;
+        }
     }
 };
 
@@ -81,6 +92,31 @@ void objectMap() {
     // print out map contents
     for (map<int, Person>::iterator it = people.begin(); it != people.end(); it++) {
         it->second.print();
+    }
+
+}
+
+void customObjectMapKeys() {
+    map<Person, int> people;
+
+    // insert object data into map
+    people[Person("Mike", 40)] = 40;
+    people[Person("Vicky", 30)] = 30;
+    people[Person("Raj", 20)] = 20;
+
+    // overwrite's the key's value
+    people[Person("Mike", 40)] = 12;
+
+    // value is changed in map but the object's value in the object key isn't updated
+    // because the overloaded < operator compares only name
+    people[Person("Mike", 44)] = 21;
+
+
+    // print out map contents
+    for (map<Person, int>::iterator it = people.begin(); it != people.end(); it++) {
+        cout << it->second << ": " << flush;
+        // keys are return as const
+        it->first.print();
     }
 
 }

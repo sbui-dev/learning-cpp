@@ -15,7 +15,8 @@ int main()
     //myList();
 
     //myMap();
-    objectMap();
+    //objectMap();
+    customObjectMapKeys();
 
     return 0;
 }
