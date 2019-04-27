@@ -7,7 +7,8 @@
 //#include "MyMap.h"
 //#include "myMultiMap.h"
 //#include "mySet.h"
-#include "myStackandQueue.h"
+//#include "myStackandQueue.h"
+#include "mySortedVectorFriend.h"
 
 int main()
 {
@@ -26,8 +27,10 @@ int main()
     //mySet();
     //myObjectSet();
 
-    myStack();
-    myQueue();
+    //myStack();
+    //myQueue();
+
+    mySortedVector();
 
     return 0;
 }

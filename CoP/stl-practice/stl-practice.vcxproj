@@ -157,6 +157,7 @@
     <ClCompile Include="mySet.cpp" />
     <ClCompile Include="myStackandQueue.cpp" />
     <ClCompile Include="myVector.cpp" />
+    <ClCompile Include="mySortedVectorFriend.cpp" />
     <ClCompile Include="stl-practice.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +167,7 @@
     <ClInclude Include="mySet.h" />
     <ClInclude Include="myStackandQueue.h" />
     <ClInclude Include="myVector.h" />
+    <ClInclude Include="mySortedVectorFriend.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
