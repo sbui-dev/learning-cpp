@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="myComplexDataType.cpp" />
     <ClCompile Include="myMultimap.cpp" />
     <ClCompile Include="myList.cpp" />
     <ClCompile Include="MyMap.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="stl-practice.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="myComplexDataType.h" />
     <ClInclude Include="myMultiMap.h" />
     <ClInclude Include="myList.h" />
     <ClInclude Include="MyMap.h" />
