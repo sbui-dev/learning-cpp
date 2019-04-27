@@ -2,11 +2,12 @@
 //
 
 #include <iostream>
-#include "myVector.h"
-#include "myList.h"
-#include "MyMap.h"
-#include "myMultiMap.h"
-#include "mySet.h"
+//#include "myVector.h"
+//#include "myList.h"
+//#include "MyMap.h"
+//#include "myMultiMap.h"
+//#include "mySet.h"
+#include "myStackandQueue.h"
 
 int main()
 {
@@ -22,8 +23,11 @@ int main()
 
     //myMultimap();
 
-    mySet();
-    myObjectSet();
+    //mySet();
+    //myObjectSet();
+
+    myStack();
+    myQueue();
 
     return 0;
 }
