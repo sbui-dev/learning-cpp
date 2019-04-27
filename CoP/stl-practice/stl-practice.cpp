@@ -14,7 +14,8 @@ int main()
 
     //myList();
 
-    myMap();
+    //myMap();
+    objectMap();
 
     return 0;
 }
