@@ -15,7 +15,7 @@ public:
         cout << id << ": " << name << endl;
     }
 
-    // need a < comparision function to compare objects
+    // need a < comparision function to compare objects when inserting objects
     bool operator<(const Test &other) const {
         return name < other.name;
     }
@@ -31,6 +31,7 @@ void mySet() {
     numbers.insert(33);
     numbers.insert(23);
 
+    // print contents
     for (set<int>::iterator it = numbers.begin(); it != numbers.end(); it++) {
         cout << *it << endl;
     }
