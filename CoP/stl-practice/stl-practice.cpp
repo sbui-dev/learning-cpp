@@ -6,6 +6,7 @@
 #include "myList.h"
 #include "MyMap.h"
 #include "myMultiMap.h"
+#include "mySet.h"
 
 int main()
 {
@@ -19,7 +20,10 @@ int main()
     //objectMap();
     //customObjectMapKeys();
 
-    myMultimap();
+    //myMultimap();
+
+    mySet();
+    myObjectSet();
 
     return 0;
 }
