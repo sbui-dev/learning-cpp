@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="myMultimap.cpp" />
     <ClCompile Include="myList.cpp" />
     <ClCompile Include="MyMap.cpp" />
     <ClCompile Include="myVector.cpp" />
     <ClCompile Include="stl-practice.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="myMultiMap.h" />
     <ClInclude Include="myList.h" />
     <ClInclude Include="MyMap.h" />
     <ClInclude Include="myVector.h" />

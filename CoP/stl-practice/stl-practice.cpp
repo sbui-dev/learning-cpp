@@ -5,6 +5,7 @@
 #include "myVector.h"
 #include "myList.h"
 #include "MyMap.h"
+#include "myMultiMap.h"
 
 int main()
 {
@@ -16,7 +17,9 @@ int main()
 
     //myMap();
     //objectMap();
-    customObjectMapKeys();
+    //customObjectMapKeys();
+
+    myMultimap();
 
     return 0;
 }
