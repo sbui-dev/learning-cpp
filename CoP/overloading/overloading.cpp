@@ -12,5 +12,9 @@ int main()
 
     //complexNumber();
 
-    plusOperator();
+    //plusOperator();
+
+    //equalOperator();
+
+    dereferenceOperator();
 }

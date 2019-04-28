@@ -154,6 +154,8 @@
     <ClCompile Include="AssignmentOperator.cpp" />
     <ClCompile Include="Complex.cpp" />
     <ClCompile Include="ComplexNumber.cpp" />
+    <ClCompile Include="dereference.cpp" />
+    <ClCompile Include="equal.cpp" />
     <ClCompile Include="LeftBitShift.cpp" />
     <ClCompile Include="overloading.cpp" />
     <ClCompile Include="plus.cpp" />

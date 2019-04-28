@@ -33,6 +33,12 @@
     <ClCompile Include="plus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="equal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dereference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="overloading.h">
