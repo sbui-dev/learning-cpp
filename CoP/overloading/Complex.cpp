@@ -26,6 +26,7 @@ const Complex& Complex::operator=(const Complex& other) {
     return *this;
 }
 
+// overload using getter functions instead of using friend 
 // getReal and getImaginary needs to be const in order to be called
 ostream& operator<<(ostream& out, const Complex& c) {
     return out << "(" << c.getReal() << "," << c.getImaginary() << ")";
