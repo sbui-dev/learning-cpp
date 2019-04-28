@@ -7,5 +7,7 @@ int main() {
 
     //poly();
 
-    abstractClasses();
+    //abstractClasses();
+
+    functors();
 }

@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="function-pointers.cpp" />
+    <ClCompile Include="functors.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="abstract.cpp" />
