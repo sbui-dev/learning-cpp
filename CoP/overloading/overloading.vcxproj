@@ -152,9 +152,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssignmentOperator.cpp" />
+    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="ComplexNumber.cpp" />
+    <ClCompile Include="LeftBitShift.cpp" />
     <ClCompile Include="overloading.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Complex.h" />
     <ClInclude Include="overloading.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
