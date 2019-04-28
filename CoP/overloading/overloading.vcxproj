@@ -156,6 +156,7 @@
     <ClCompile Include="ComplexNumber.cpp" />
     <ClCompile Include="LeftBitShift.cpp" />
     <ClCompile Include="overloading.cpp" />
+    <ClCompile Include="plus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Complex.h" />

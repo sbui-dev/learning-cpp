@@ -2,9 +2,6 @@
 #include "Complex.h"
 using namespace std;
 
-
-
-
 void complexNumber() {
     Complex c1(2, 3);
     
