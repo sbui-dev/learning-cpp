@@ -123,10 +123,24 @@ void captureThisWithLambda() {
     test.run();
 }
 
+void mutableLambda() {
+    int cats = 5;
+
+    // normally capture by value cannot change variables, but the keyword mutable allows it to change
+    [cats]() mutable {
+        cats = 8;
+        cout << cats << endl;
+    }();
+
+    // doesn't affect the local variable
+    cout << cats << endl;
+}
+
 int main() {
     lambdaExpression();
     lambdaExpressionWithParameters();
     lambdaCapture();
     captureThisWithLambda();
+    mutableLambda();
     return 0;
 }
