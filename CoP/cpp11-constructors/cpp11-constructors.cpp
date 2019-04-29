@@ -34,7 +34,7 @@ public:
 class Test {
 private:
     static const int SIZE = 100;
-    int* pBuffer;
+    int* pBuffer{nullptr};
 public:
     Test() {
         cout << "constructor" << endl;
@@ -57,6 +57,15 @@ public:
         memcpy(pBuffer, other.pBuffer, SIZE * sizeof(int));
     }
 
+    Test(Test&& other) {
+        cout << "move constructor" << endl;
+        // takes the allocated buffer from another obj
+        pBuffer = other.pBuffer;
+
+        // must set other pBuffer to null pointer or the other's destructor will deallocate it
+        other.pBuffer = nullptr;
+    }
+
     ~Test() {
         cout << "destructor" << endl;
         delete[] pBuffer;
@@ -67,6 +76,22 @@ public:
         pBuffer = new int[SIZE] {};
 
         memcpy(pBuffer, other.pBuffer, SIZE * sizeof(int));
+        return *this;
+    }
+
+    Test& operator=(Test&& other) {
+        cout << "move assignment" << endl;
+
+        // memory leak and problems can occur if you're not careful
+
+        // delete current pBuffer
+        delete[] pBuffer;
+
+        // take allocation of other's pBuffer
+        pBuffer = other.pBuffer;
+
+        // must set other pBuffer to null pointer or the other's destructor will deallocate it
+        other.pBuffer = nullptr;
         return *this;
     }
 };
@@ -130,6 +155,9 @@ void lValueRef() {
     Test test2(Test(1));
 }
 
+/*
+** Check if obj ref is lvalue or rvalue
+*/
 void check(const Test& value) {
     cout << "lValue function" << endl;
 }
@@ -155,10 +183,22 @@ void rValueRef() {
     check(Test()); // rvalue
 }
 
+void moveConstructor() {
+    vector<Test> vec;
+    vec.push_back(Test());
+}
+
+void moveAssignment() {
+    Test test;
+    test = getTest();
+}
+
 int main() {
-    //delegatingContructor();
-    //constructorMemory();
-    //lValueRef();
+    delegatingContructor();
+    constructorMemory();
+    lValueRef();
     rValueRef();
+    moveConstructor();
+    moveAssignment();
     return 0;
 }
