@@ -154,9 +154,12 @@
     <ClCompile Include="auto.cpp" />
     <ClCompile Include="cpp11.cpp" />
     <ClCompile Include="decltype.cpp" />
+    <ClCompile Include="nested-template-class.cpp" />
+    <ClCompile Include="range-based-loops.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpp11.h" />
+    <ClInclude Include="ring.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

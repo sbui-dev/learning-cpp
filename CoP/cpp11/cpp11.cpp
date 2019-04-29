@@ -3,5 +3,8 @@
 
 int main()
 {
-    typeInfo();
+    //typeInfo();
+    //autoType();
+    //rloops();
+    templateClass();
 }

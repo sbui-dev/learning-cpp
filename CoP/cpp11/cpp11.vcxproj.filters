@@ -24,9 +24,18 @@
     <ClCompile Include="auto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="range-based-loops.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nested-template-class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpp11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
