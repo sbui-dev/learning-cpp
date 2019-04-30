@@ -23,7 +23,7 @@ void FractalCreator::addRange(double rangeEnd, const RGB& rgb) {
 int FractalCreator::getRange(int iterations) const {
     int range = 0;
 
-    for (int i = 1; i < m_ranges.size(); i++) {
+    for (size_t i = 1; i < m_ranges.size(); i++) {
         range = i;
 
         if (m_ranges[i] > iterations) {
@@ -34,7 +34,7 @@ int FractalCreator::getRange(int iterations) const {
     range--;
 
     assert(range > -1);
-    assert(range < m_ranges.size());
+    assert(static_cast<size_t>(range) < m_ranges.size());
 
     return range;
 }
