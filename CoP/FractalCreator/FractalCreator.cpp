@@ -4,12 +4,13 @@
 void FractalCreator::run(string name) {
     calculateIteration();
     calculateTotalIterations();
+    calculateRangeTotals();
     drawFractal();
     writeBitmap(name);
 }
 
 void FractalCreator::addRange(double rangeEnd, const RGB& rgb) {
-    m_ranges.push_back(rangeEnd*Mandelbrot::MAX_ITERATIONS);
+    m_ranges.push_back(rangeEnd * Mandelbrot::MAX_ITERATIONS);
     m_colors.push_back(rgb);
 
     if (m_bGotFirstRange) {
@@ -87,7 +88,6 @@ void FractalCreator::calculateTotalIterations() {
     for (int i = 0; i < Mandelbrot::MAX_ITERATIONS; i++) {
         m_total += m_histogram[i];
     }
-
 }
 
 void FractalCreator::drawFractal() {
