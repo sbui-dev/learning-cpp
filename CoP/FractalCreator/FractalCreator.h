@@ -5,6 +5,7 @@
 #include <cmath>
 #include "Bitmap.h"
 #include "Mandelbrot.h"
+#include "RGB.h"
 #include "Zoom.h"
 #include "ZoomList.h"
 using namespace std;
@@ -23,12 +24,12 @@ private:
     void calculateIteration();
     void calculateTotalIterations();
     void drawFractal();
-    void addZoom(const Zoom& zoom);
     void writeBitmap(string name);
 
 public:
     FractalCreator(int width, int height);
     ~FractalCreator();
+    void addZoom(const Zoom& zoom);
     void run(string name);
 };
 
