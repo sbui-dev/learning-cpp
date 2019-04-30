@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cstdint>
 #include <memory>
-#include <math.h>
+#include <cmath>
 #include "Bitmap.h"
 #include "Mandelbrot.h"
+#include "ZoomList.h"
 
 using namespace std;
 
@@ -18,6 +19,9 @@ int main()
 
     double min = 9999999;
     double max = -9999999;
+
+    ZoomList zoomList(WIDTH, HEIGHT);
+    zoomList.add(Zoom(WIDTH/2, HEIGHT/2, 1));
 
     unique_ptr<int[]> histogram(new int[Mandelbrot::MAX_ITERATIONS]{});
     unique_ptr<int[]> fractual(new int[WIDTH * HEIGHT]{});
