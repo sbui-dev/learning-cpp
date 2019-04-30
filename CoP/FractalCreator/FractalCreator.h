@@ -19,14 +19,16 @@ private:
     unique_ptr<int[]> m_fractual;
     Bitmap m_bitmap;
     ZoomList m_zoomList;
-public:
-    FractalCreator(int width, int height);
-    ~FractalCreator();
 
     void calculateIteration();
     void calculateTotalIterations();
     void drawFractal();
     void addZoom(const Zoom& zoom);
     void writeBitmap(string name);
+
+public:
+    FractalCreator(int width, int height);
+    ~FractalCreator();
+    void run(string name);
 };
 
